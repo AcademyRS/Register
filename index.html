@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <div class="main">
+        <h2>Login</h2>
+        <form id="login">
+            <input type="email" id="name">
+            <input type="password" id="password">
+            <button id="submit">Entrar</button>
+        </form>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyCuOJ4N6CY12xAXuPpmQsp1teh2eLLkC4Q",
+        authDomain: "register-ca40c.firebaseapp.com",
+        databaseURL: "https://register-ca40c.firebaseio.com",
+        projectId: "register-ca40c",
+        storageBucket: "",
+        messagingSenderId: "12392028851"
+    };
+    firebase.initializeApp(config);
+    </script>
+    </body>
+</html>

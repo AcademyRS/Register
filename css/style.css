@@ -44,6 +44,9 @@ h2 { margin-bottom: 35px;font-size: 20px;}
     text-align: left;
     width: 300px;
     height: 100px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 10px 1px silver;
 }
 .content {
     margin-left: 220px;
@@ -51,11 +54,32 @@ h2 { margin-bottom: 35px;font-size: 20px;}
     padding-left: 45px;
     height: 100%;
 }
+p { margin-top: 5px;}
+
+/* ============================================================================= */
+/* Team*/
+
+#users {
+    table-layout: fixed;
+    width: 600px;
+    height: 30px;
+}
+#users th { padding-bottom: 20px;}
+#users td {
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.7;
+    width: 200px;
+    padding: 5px;
+    border-bottom: 2px solid silver;
+}
+
 
 /* ============================================================================= */
 /* Global */
 
 #menu {
+    box-shadow: 2px 2px 10px 1px silver;
     position: fixed;
     top: 0;
     left: 0;
@@ -64,12 +88,13 @@ h2 { margin-bottom: 35px;font-size: 20px;}
     background-color: silver;
     list-style: none;
     padding: 50px 0 10px 0;
+    background: linear-gradient(silver, white);
 }
-li{ padding: 20px;background-color: white;border: 0.5px solid silver;}
-a { color: black;text-decoration: none;padding: 20px 25px 20px 25px;}
+li { background-color: white;}
+#menu li a:link { text-decoration: none;color: black;padding: 12px 20px;line-height: 40px;}
 #menu li:hover { background-color: #B0E0E6;}
 .active { background-color: #87CEFA;}
-#user {
+li#user {
     margin: auto;
     background: url('../img/user.png') no-repeat;
     background-size: 100%;
@@ -77,3 +102,4 @@ a { color: black;text-decoration: none;padding: 20px 25px 20px 25px;}
     width: 50px;
     margin-bottom: 50px;
 }
+li#user:hover { background-color: transparent;}

@@ -10,8 +10,9 @@
 <body>
     <nav>
         <ul id="menu">
+            <li id="user"></li>
             <li><a href="">Activity record</a></li>
-            <li><a href="proj.html">Projects</a></li>
+            <li class="active"><a href="proj.html">Projects</a></li>
             <li><a href="">Team</a></li>
         </ul>
     </nav>
@@ -21,5 +22,19 @@
             <h4>Progresso : Em andamento</h4>
         </div>        
     </div>
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCuOJ4N6CY12xAXuPpmQsp1teh2eLLkC4Q",
+            authDomain: "register-ca40c.firebaseapp.com",
+            databaseURL: "https://register-ca40c.firebaseio.com",
+            projectId: "register-ca40c",
+            storageBucket: "",
+            messagingSenderId: "12392028851"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="js/proj.js"></script>
 </body>
 </html>

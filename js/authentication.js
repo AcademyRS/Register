@@ -10,7 +10,7 @@ btnLogin.addEventListener('click', function (e) {
     e.preventDefault();
     firebase.auth().signInWithEmailAndPassword(email.value, password.value).then(function (result) {
         console.log(result);
-        window.location.replace('https://academyrs.github.io/Register/proj.html');
+        window.location.href('proj.html');
     }).catch(function (error) {
         console.log(error);
     });
